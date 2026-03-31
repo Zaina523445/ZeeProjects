@@ -1,20 +1,36 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    institution: "Vellore Institute of Technology",
+    degree: "Bachelor of Technology — Computer Science & Engineering",
+    duration: "Sep 2020 – Jul 2024",
+    description:
+      "Specialisation in Cyber Physical Systems. Relevant coursework: Computer Networks, Distributed Systems, Telecommunications, Network Security, Data Structures, Object-Oriented Programming.",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    institution: "International Indian School, Dammam",
+    degree: "Senior Secondary — Year 12 Equivalent (AQF Level 3)",
+    duration: "May 2020",
+    description: "Completed secondary education with a focus on Science and Mathematics.",
+  },
+];
+ 
+export const certifications = [
+  {
+    id: 1,
+    title: "Prompt Engineering for Professionals (BCSS BOS)",
+    issuer: "Ericsson",
+    date: "Nov 2024",
+    description:
+      "Formal certification in prompt engineering techniques for professional AI-assisted development workflows. Applied daily using Amazon Q Developer in production engineering environments.",
   },
   {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
-  }
-]
+    id: 2,
+    title: "Security, Compliance & Identity Fundamentals (SC-900)",
+    issuer: "Microsoft Azure",
+    date: "Jul 2023",
+    description:
+      "Microsoft certification covering cloud security fundamentals, compliance frameworks, and identity management in Azure environments.",
+  },
+];

@@ -10,9 +10,14 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Abu Said - Software Developer",
+  title: "Portfolio of Zaina Nazimudeen Ahmed - Software Engineer",
   description:
-    "This is the portfolio of Abu Said. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "Software Engineer with 2+ years at Ericsson specialising in Java microservices, Apache Kafka, CI/CD pipelines, and AI-assisted development. Certified Prompt Engineer based in Perth, WA, Australia.",
+  icons: {
+    icon: "/profile.jpg",
+    shortcut: "/profile.jpg",
+    apple: "/profile.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {

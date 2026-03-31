@@ -82,7 +82,12 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
+import kafka from '../app/assets/svg/skills/kafka.svg';
+import spring from '../app/assets/svg/skills/spring.svg';
+import helm from '../app/assets/svg/skills/helm.svg';
+import jenkins from '../app/assets/svg/skills/jenkins.svg';
+import gitlab from '../app/assets/svg/skills/gitlab.svg';
+import junit from '../app/assets/svg/skills/junit.svg';
 
 
 export const skillsImage = (skill) => {
@@ -254,6 +259,18 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'kafka':
+      return kafka;
+    case 'spring boot':
+      return spring;
+    case 'helm':
+      return helm;
+    case 'jenkins':
+      return jenkins;
+    case 'gitlab ci':
+      return gitlab;
+    case 'junit':
+      return junit;
     default:
       break;
   }
