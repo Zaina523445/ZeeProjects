@@ -47,7 +47,8 @@ function Education() {
                       </div>
                       <div>
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">{education.degree}</p>
-                        <p className="text-sm sm:text-base">{education.institution}</p>
+                        <p className="text-sm sm:text-base text-gray-300">{education.institution}</p>
+                        <p className="text-xs sm:text-sm mt-3 text-gray-400">{education.description}</p>
                       </div>
                     </div>
                   </div>
@@ -88,8 +89,8 @@ function Education() {
                       </div>
                       <div>
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">{cert.title}</p>
-                        <p className="text-sm sm:text-base">{cert.issuer}</p>
-                        <p className="text-xs sm:text-sm mt-2 text-gray-400">{cert.description}</p>
+                        <p className="text-sm sm:text-base text-gray-300">{cert.issuer}</p>
+                        <p className="text-xs sm:text-sm mt-3 text-gray-400">{cert.description}</p>
                       </div>
                     </div>
                   </div>
