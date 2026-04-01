@@ -17,7 +17,6 @@ function Education() {
           <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
         </div>
       </div>
-
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -25,7 +24,6 @@ function Education() {
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
@@ -59,7 +57,6 @@ function Education() {
           </div>
         </div>
       </div>
-
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -67,7 +64,6 @@ function Education() {
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
@@ -102,13 +98,12 @@ function Education() {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
 
 export default Education;
-EOFcat > /home/zaina523/developer-portfolio/app/components/homepage/education/index.jsx << 'EOF'
+ENDOFFILEcat > /home/zaina523/developer-portfolio/app/components/homepage/education/index.jsx << 'ENDOFFILE'
 // @flow strict
 import { certifications, educations } from "@/utils/data/educations";
 import Image from "next/image";
@@ -128,7 +123,6 @@ function Education() {
           <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
         </div>
       </div>
-
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -136,7 +130,6 @@ function Education() {
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
@@ -170,7 +163,6 @@ function Education() {
           </div>
         </div>
       </div>
-
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -178,7 +170,6 @@ function Education() {
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
@@ -213,7 +204,6 @@ function Education() {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
