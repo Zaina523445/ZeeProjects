@@ -23,6 +23,7 @@ export const certifications = [
     issuer: "Ericsson",
     date: "Nov 2024",
     link: "https://drive.google.com/file/d/1uEDWby8Nd5fSfmeGTwsz00wr-rauu0Pi/view?usp=sharing",
+    image: "/cert-prompt.png",
     description:
       "Formal certification in prompt engineering techniques for professional AI-assisted development workflows. Applied daily using Amazon Q Developer in production engineering environments.",
   },
@@ -32,6 +33,7 @@ export const certifications = [
     issuer: "Microsoft Azure",
     date: "Jul 2023",
     link: "https://drive.google.com/file/d/1tm-7RU9yflC0TWM_KZ6c4bU7xM92YBml/view?usp=sharing",
+    image: "/cert-sc900.png",
     description:
       "Microsoft certification covering cloud security fundamentals, compliance frameworks, and identity management in Azure environments.",
   },
@@ -41,6 +43,7 @@ export const certifications = [
     issuer: "DeepLearning.AI",
     date: "Mar 2026",
     link: "https://coursera.org/share/ffb40faec977e251d83e6359dda60108",
+    image: "/cert-genai.png",
     description:
       "Certification covering generative AI concepts and practical applications for software development, including large language models, prompt engineering, and AI-assisted coding workflows.",
   },

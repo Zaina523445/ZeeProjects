@@ -93,14 +93,33 @@ function Education() {
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">{cert.title}</p>
                         <p className="text-sm sm:text-base text-gray-300">{cert.issuer}</p>
                         <p className="text-xs sm:text-sm mt-3 text-gray-400">{cert.description}</p>
+
+                        {cert.image && (
+                          <div className="relative mt-4 group w-fit">
+                            <div className="flex items-center gap-1 text-xs text-[#16f2b3] cursor-pointer">
+                              <HiOutlineBadgeCheck size={14} />
+                              <span>Hover to preview certificate</span>
+                            </div>
+                            <div className="absolute bottom-8 left-0 z-50 hidden group-hover:block w-[320px] rounded-lg overflow-hidden shadow-2xl border border-violet-500">
+                              <Image
+                                src={cert.image}
+                                alt={cert.title}
+                                width={320}
+                                height={220}
+                                className="w-full h-auto object-cover"
+                              />
+                            </div>
+                          </div>
+                        )}
+
                         {cert.link && (
                           <Link
                             href={cert.link}
                             target="_blank"
-                            className="mt-3 flex items-center gap-1 text-xs text-[#16f2b3] hover:text-pink-500 transition-colors duration-300 w-fit"
+                            className="mt-2 flex items-center gap-1 text-xs text-pink-400 hover:text-pink-300 transition-colors duration-300 w-fit"
                           >
                             <MdOpenInNew size={14} />
-                            <span>View Certificate</span>
+                            <span>Open Certificate</span>
                           </Link>
                         )}
                       </div>
