@@ -15,13 +15,14 @@ export const educations = [
     description: "Completed secondary education with a focus on Science and Mathematics.",
   },
 ];
- 
+
 export const certifications = [
   {
     id: 1,
     title: "Prompt Engineering for Professionals (BCSS BOS)",
     issuer: "Ericsson",
     date: "Nov 2024",
+    link: "https://drive.google.com/file/d/1uEDWby8Nd5fSfmeGTwsz00wr-rauu0Pi/view?usp=sharing",
     description:
       "Formal certification in prompt engineering techniques for professional AI-assisted development workflows. Applied daily using Amazon Q Developer in production engineering environments.",
   },
@@ -30,14 +31,16 @@ export const certifications = [
     title: "Security, Compliance & Identity Fundamentals (SC-900)",
     issuer: "Microsoft Azure",
     date: "Jul 2023",
+    link: "https://drive.google.com/file/d/1tm-7RU9yflC0TWM_KZ6c4bU7xM92YBml/view?usp=sharing",
     description:
       "Microsoft certification covering cloud security fundamentals, compliance frameworks, and identity management in Azure environments.",
   },
   {
     id: 3,
     title: "Generative AI for Software Development",
-    issuer: "DeepLearning.AI — Coursera",
+    issuer: "DeepLearning.AI",
     date: "Mar 2026",
+    link: "https://coursera.org/share/ffb40faec977e251d83e6359dda60108",
     description:
       "Certification covering generative AI concepts and practical applications for software development, including large language models, prompt engineering, and AI-assisted coding workflows.",
   },

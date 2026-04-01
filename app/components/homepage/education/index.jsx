@@ -1,8 +1,10 @@
 // @flow strict
 import { certifications, educations } from "@/utils/data/educations";
 import Image from "next/image";
+import Link from "next/link";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
+import { MdOpenInNew } from "react-icons/md";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
@@ -87,10 +89,20 @@ function Education() {
                       <div className="text-violet-500 transition-all duration-300 hover:scale-125">
                         <HiOutlineBadgeCheck size={36} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">{cert.title}</p>
                         <p className="text-sm sm:text-base text-gray-300">{cert.issuer}</p>
                         <p className="text-xs sm:text-sm mt-3 text-gray-400">{cert.description}</p>
+                        {cert.link && (
+                          <Link
+                            href={cert.link}
+                            target="_blank"
+                            className="mt-3 flex items-center gap-1 text-xs text-[#16f2b3] hover:text-pink-500 transition-colors duration-300 w-fit"
+                          >
+                            <MdOpenInNew size={14} />
+                            <span>View Certificate</span>
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>
