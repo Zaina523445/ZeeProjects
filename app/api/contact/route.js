@@ -75,12 +75,7 @@ export async function POST(request) {
     const chat_id = process.env.TELEGRAM_CHAT_ID;
 
     // Validate environment variables
-    if (!token || !chat_id) {
-      return NextResponse.json({
-        success: false,
-        message: 'Telegram token or chat ID is missing.',
-      }, { status: 400 });
-    }
+    // Telegram is optional
 
     const message = `New message from ${name}\n\nEmail: ${email}\n\nMessage:\n\n${userMessage}\n\n`;
 
@@ -90,17 +85,17 @@ export async function POST(request) {
     // Send email
     const emailSuccess = await sendEmail(payload, message);
 
-    if (telegramSuccess && emailSuccess) {
-      return NextResponse.json({
-        success: true,
-        message: 'Message and email sent successfully!',
-      }, { status: 200 });
-    }
+    if (emailSuccess) {
+  return NextResponse.json({
+    success: true,
+    message: 'Message sent successfully!',
+  }, { status: 200 });
+}
 
-    return NextResponse.json({
-      success: false,
-      message: 'Failed to send message or email.',
-    }, { status: 500 });
+return NextResponse.json({
+  success: false,
+  message: 'Failed to send message.',
+}, { status: 500 });
   } catch (error) {
     console.error('API Error:', error.message);
     return NextResponse.json({
