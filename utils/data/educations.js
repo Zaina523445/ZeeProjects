@@ -33,4 +33,12 @@ export const certifications = [
     description:
       "Microsoft certification covering cloud security fundamentals, compliance frameworks, and identity management in Azure environments.",
   },
+  {
+    id: 3,
+    title: "Generative AI for Software Development",
+    issuer: "DeepLearning.AI — Coursera",
+    date: "Mar 2026",
+    description:
+      "Certification covering generative AI concepts and practical applications for software development, including large language models, prompt engineering, and AI-assisted coding workflows.",
+  },
 ];
