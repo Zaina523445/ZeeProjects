@@ -22,7 +22,7 @@ export const certifications = [
     title: "Prompt Engineering for Professionals (BCSS BOS)",
     issuer: "Ericsson",
     date: "Nov 2024",
-    link: "https://drive.google.com/file/d/1uEDWby8Nd5fSfmeGTwsz00wr-rauu0Pi/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1uEDWby8Nd5fSfmeGTwsz00wr-rauu0Pi/preview",
     image: "/cert-prompt.png",
     description:
       "Formal certification in prompt engineering techniques for professional AI-assisted development workflows. Applied daily using Amazon Q Developer in production engineering environments.",
@@ -32,7 +32,7 @@ export const certifications = [
     title: "Security, Compliance & Identity Fundamentals (SC-900)",
     issuer: "Microsoft Azure",
     date: "Jul 2023",
-    link: "https://drive.google.com/file/d/1tm-7RU9yflC0TWM_KZ6c4bU7xM92YBml/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1tm-7RU9yflC0TWM_KZ6c4bU7xM92YBml/preview",
     image: "/cert-sc900.png",
     description:
       "Microsoft certification covering cloud security fundamentals, compliance frameworks, and identity management in Azure environments.",
