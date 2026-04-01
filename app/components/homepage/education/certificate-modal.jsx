@@ -11,9 +11,6 @@ function CertificateModal({ cert }) {
       const fileId = link.match(/\/d\/(.*?)\//)?.[1];
       return `https://drive.google.com/file/d/${fileId}/preview`;
     }
-    if (link.includes('coursera.org')) {
-      return link;
-    }
     return link;
   };
 
