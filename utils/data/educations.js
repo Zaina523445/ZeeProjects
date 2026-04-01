@@ -10,7 +10,7 @@ export const educations = [
   {
     id: 2,
     institution: "International Indian School, Dammam",
-    degree: "Senior Secondary — Year 12 Equivalent (AQF Level 3)",
+    degree: "Year 12 Equivalent (AQF Level 3)",
     duration: "May 2020",
     description: "Completed secondary education with a focus on Science and Mathematics.",
   },
