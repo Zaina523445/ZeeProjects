@@ -1,13 +1,12 @@
 // @flow strict
 import { certifications, educations } from "@/utils/data/educations";
 import Image from "next/image";
-import Link from "next/link";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
-import { MdOpenInNew } from "react-icons/md";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import CertificateModal from "./certificate-modal";
 
 function Education() {
   return (
@@ -93,35 +92,118 @@ function Education() {
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">{cert.title}</p>
                         <p className="text-sm sm:text-base text-gray-300">{cert.issuer}</p>
                         <p className="text-xs sm:text-sm mt-3 text-gray-400">{cert.description}</p>
+                        <CertificateModal cert={cert} />
+                      </div>
+                    </div>
+                  </div>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
 
-                        {cert.image && (
-                          <div className="relative mt-4 group w-fit">
-                            <div className="flex items-center gap-1 text-xs text-[#16f2b3] cursor-pointer">
-                              <HiOutlineBadgeCheck size={14} />
-                              <span>Hover to preview certificate</span>
-                            </div>
-                            <div className="absolute bottom-8 left-0 z-50 hidden group-hover:block w-[320px] rounded-lg overflow-hidden shadow-2xl border border-violet-500">
-                              <Image
-                                src={cert.image}
-                                alt={cert.title}
-                                width={320}
-                                height={220}
-                                className="w-full h-auto object-cover"
-                              />
-                            </div>
-                          </div>
-                        )}
+    </div>
+  );
+};
 
-                        {cert.link && (
-                          <Link
-                            href={cert.link}
-                            target="_blank"
-                            className="mt-2 flex items-center gap-1 text-xs text-pink-400 hover:text-pink-300 transition-colors duration-300 w-fit"
-                          >
-                            <MdOpenInNew size={14} />
-                            <span>Open Certificate</span>
-                          </Link>
-                        )}
+export default Education;
+EOFcat > /home/zaina523/developer-portfolio/app/components/homepage/education/index.jsx << 'EOF'
+// @flow strict
+import { certifications, educations } from "@/utils/data/educations";
+import Image from "next/image";
+import { BsPersonWorkspace } from "react-icons/bs";
+import { HiOutlineBadgeCheck } from "react-icons/hi";
+import lottieFile from '../../../assets/lottie/study.json';
+import AnimationLottie from "../../helper/animation-lottie";
+import GlowCard from "../../helper/glow-card";
+import CertificateModal from "./certificate-modal";
+
+function Education() {
+  return (
+    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+      <Image src="/section.svg" alt="Hero" width={1572} height={795} className="absolute top-0 -z-10" />
+      <div className="flex justify-center -translate-y-[1px]">
+        <div className="w-3/4">
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
+        </div>
+      </div>
+
+      <div className="flex justify-center my-5 lg:py-8">
+        <div className="flex items-center">
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">Education</span>
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+        </div>
+      </div>
+
+      <div className="py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          <div className="flex justify-center items-start">
+            <div className="w-3/4 h-3/4">
+              <AnimationLottie animationPath={lottieFile} />
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col gap-6">
+              {educations.map(education => (
+                <GlowCard key={education.id} identifier={`education-${education.id}`}>
+                  <div className="p-3 relative text-white">
+                    <Image src="/blur-23.svg" alt="Hero" width={1080} height={200} className="absolute bottom-0 opacity-80" />
+                    <div className="flex justify-center">
+                      <p className="text-xs sm:text-sm text-[#16f2b3]">{education.duration}</p>
+                    </div>
+                    <div className="flex items-center gap-x-8 px-3 py-5">
+                      <div className="text-violet-500 transition-all duration-300 hover:scale-125">
+                        <BsPersonWorkspace size={36} />
+                      </div>
+                      <div>
+                        <p className="text-base sm:text-xl mb-2 font-medium uppercase">{education.degree}</p>
+                        <p className="text-sm sm:text-base text-gray-300">{education.institution}</p>
+                        <p className="text-xs sm:text-sm mt-3 text-gray-400">{education.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center my-5 lg:py-8">
+        <div className="flex items-center">
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">Certification</span>
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+        </div>
+      </div>
+
+      <div className="py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          <div className="flex justify-center items-start">
+            <div className="w-3/4 h-3/4">
+              <AnimationLottie animationPath={lottieFile} />
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col gap-6">
+              {certifications.map(cert => (
+                <GlowCard key={cert.id} identifier={`cert-${cert.id}`}>
+                  <div className="p-3 relative text-white">
+                    <Image src="/blur-23.svg" alt="Hero" width={1080} height={200} className="absolute bottom-0 opacity-80" />
+                    <div className="flex justify-center">
+                      <p className="text-xs sm:text-sm text-[#16f2b3]">{cert.date}</p>
+                    </div>
+                    <div className="flex items-center gap-x-8 px-3 py-5">
+                      <div className="text-violet-500 transition-all duration-300 hover:scale-125">
+                        <HiOutlineBadgeCheck size={36} />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-base sm:text-xl mb-2 font-medium uppercase">{cert.title}</p>
+                        <p className="text-sm sm:text-base text-gray-300">{cert.issuer}</p>
+                        <p className="text-xs sm:text-sm mt-3 text-gray-400">{cert.description}</p>
+                        <CertificateModal cert={cert} />
                       </div>
                     </div>
                   </div>
